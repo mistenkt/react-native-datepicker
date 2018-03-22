@@ -34,12 +34,14 @@ let style = StyleSheet.create({
     flex: 1,
     alignItems: 'flex-end',
     flexDirection: 'row',
-    backgroundColor: '#00000077'
+    backgroundColor: 'transparent',
   },
   datePickerCon: {
     backgroundColor: '#fff',
     height: 0,
-    overflow: 'hidden'
+    overflow: 'hidden',
+    borderTopWidth: 1,
+    borderTopColor: '#ccc'
   },
   btnText: {
     position: 'absolute',
