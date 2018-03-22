@@ -383,7 +383,10 @@ class DatePicker extends Component {
                   <Animated.View
                     style={[Style.datePickerCon, {height: this.state.animatedHeight}, customStyles.datePickerCon]}
                   >
-                    <View pointerEvents={this.state.allowPointerEvents ? 'auto' : 'none'}>
+                    <View 
+                      pointerEvents={this.state.allowPointerEvents ? 'auto' : 'none'}
+                      style={{borderTopWidth: 1, borderTopColor: '#f6f6f6'}}
+                    >
                       <DatePickerIOS
                         date={this.state.date}
                         mode={mode}
@@ -392,7 +395,7 @@ class DatePicker extends Component {
                         onDateChange={this.onDateChange}
                         minuteInterval={minuteInterval}
                         timeZoneOffsetInMinutes={timeZoneOffsetInMinutes}
-                        style={[Style.datePicker, customStyles.datePicker]}
+                        style={[Style.datePicker, customStyles.datePicker, {borderTopColor: '#f6f6f6'}]}
                       />
                     </View>
                     <TouchableComponent

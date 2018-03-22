@@ -40,8 +40,6 @@ let style = StyleSheet.create({
     backgroundColor: '#fff',
     height: 0,
     overflow: 'hidden',
-    borderTopWidth: 1,
-    borderTopColor: '#ccc'
   },
   btnText: {
     position: 'absolute',
